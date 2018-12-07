@@ -5,11 +5,6 @@
 
 `$ npm install react-native-imagebutton --save`
 
-### Mostly automatic installation
-
-`$ react-native link react-native-imagebutton`
-
-
 ## Usage
 ```javascript
 import {Imagebutton} from 'react-native-imagebutton';
