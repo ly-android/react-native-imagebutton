@@ -1,5 +1,5 @@
 {
-  "name": "react-native-image-button",
+  "name": "react-native-image-button-text",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,7 +20,11 @@
     "android",
     "imagebutton"
   ],
-  "author":"",
+  "repository":{
+    "type": "git",
+    "url":"git@github.com:ly-android/react-native-imagebutton.git"
+  },
+  "author":"allenly",
   "license": "",
   "peerDependencies": {
     "react-native": "^0.54.4"
