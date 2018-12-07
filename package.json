@@ -1,6 +1,6 @@
 {
   "name": "react-native-image-button-text",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -20,11 +20,11 @@
     "android",
     "imagebutton"
   ],
-  "repository":{
+  "repository": {
     "type": "git",
-    "url":"git@github.com:ly-android/react-native-imagebutton.git"
+    "url": "git@github.com:ly-android/react-native-imagebutton.git"
   },
-  "author":"allenly",
+  "author": "allenly",
   "license": "",
   "peerDependencies": {
     "react-native": "^0.54.4"
