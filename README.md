@@ -9,37 +9,44 @@
 
 `$ react-native link react-native-imagebutton`
 
-### Manual installation
-
-
-#### iOS
-
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-imagebutton` and add `RNImagebutton.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNImagebutton.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
-
-#### Android
-
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.allen.imagebutton.RNImagebuttonPackage;` to the imports at the top of the file
-  - Add `new RNImagebuttonPackage()` to the list returned by the `getPackages()` method
-2. Append the following lines to `android/settings.gradle`:
-  	```
-  	include ':react-native-imagebutton'
-  	project(':react-native-imagebutton').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-imagebutton/android')
-  	```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-  	```
-      compile project(':react-native-imagebutton')
-  	```
-
 
 ## Usage
 ```javascript
-import RNImagebutton from 'react-native-imagebutton';
-
-// TODO: What to do with the module?
-RNImagebutton;
+import {Imagebutton} from 'react-native-imagebutton';
 ```
-  
+#### props
+-   width: PropTypes.number.isRequired, //the component size
+-   height: PropTypes.number.isRequired,
+-   text: PropTypes.string.isRequired, //show text on the componet
+-   activeOpacity: PropTypes.number,  //default 0.3 
+-   fontSize: PropTypes.number,
+-   textColor: PropTypes.string,
+-   onPress: PropTypes.func,
+-   paddingTop: PropTypes.number, //text marging top
+-   paddingLeft: PropTypes.number, //text marging left
+-   paddingRight: PropTypes.number, //text marging right
+-   paddingBottom: PropTypes.number,//text marging bottom
+-   textAlignVertical: PropTypes.oneOf(['flex-start', 'center', 'flex-end']),//text vertical position,default center
+-   textAlignHorizontal: PropTypes.oneOf(['flex-start', 'center', 'flex-end']) //text horizontal position,default center
+
+#### use the ImageButton Component
+```javascript
+
+_share=()=>{
+    
+};
+
+<ImageButton style={styles.btn}
+        width={250}
+        height={64}
+        fontSize={20}
+        textColor="#ffe490"
+        paddingTop={4}
+        textAlignHorizontal="flex-start"
+        onPress={this._share.bind(this)}
+        source={require('../images/join_reward_normal.png')}
+        text="share"
+      />
+```
+
+
