@@ -1,5 +1,5 @@
 {
-  "name": "react-native-imagebutton",
+  "name": "react-native-image-button",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,9 +7,20 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "react-component",
+    "react-native-imagebutton",
+    "react-native-component",
+    "react-native-image-button",
+    "image",
+    "button",
+    "react",
+    "mobile",
+    "ios",
+    "android",
+    "imagebutton"
   ],
-  "author": "",
+  "author":"",
   "license": "",
   "peerDependencies": {
     "react-native": "^0.54.4"
