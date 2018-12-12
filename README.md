@@ -3,11 +3,11 @@
 
 ## Getting started
 
-`$ npm install react-native-imagebutton --save`
+`$ npm install react-native-image-button-text --save`
 
 ## Usage
 ```javascript
-import {Imagebutton} from 'react-native-imagebutton';
+import {Imagebutton} from 'react-native-image-button-text';
 ```
 #### props
 -   width: PropTypes.number.isRequired, //the component size
