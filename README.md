@@ -13,6 +13,7 @@ import {Imagebutton} from 'react-native-image-button-text';
 -   width: PropTypes.number.isRequired, //the component size
 -   height: PropTypes.number.isRequired,
 -   text: PropTypes.string.isRequired, //show text on the componet
+-   backgroundColor: PropTypes.string, //button color default transparent
 -   activeOpacity: PropTypes.number,  //default 0.3 
 -   fontSize: PropTypes.number,
 -   textColor: PropTypes.string,
