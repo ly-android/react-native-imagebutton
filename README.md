@@ -30,7 +30,11 @@ import {Imagebutton} from 'react-native-image-button-text';
 ### like this!
 ```javascript
 <ImageButton width={80} height={40} text="click me" backgroundColor="red"/>
-<ImageButton style={{marginTop: 20}} width={94.5} height={30.5} text="click me" source={require('./solo/images/btn_ok.png')}/>
+<ImageButton style={{marginTop: 20}} 
+    width={94.5} 
+    height={30.5} 
+    text="click me" 
+    source={require('./solo/images/btn_ok.png')}/>
 ```
 #### use the ImageButton Component
 ```javascript
