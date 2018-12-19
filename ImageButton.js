@@ -28,6 +28,8 @@ export default class ImageButton extends Component {
         fontSize: PropTypes.number,
         textColor: PropTypes.string,
         onPress: PropTypes.func,
+        onPressIn: PropTypes.func,
+        onPressOut: PropTypes.func,
         paddingTop: PropTypes.number,
         paddingLeft: PropTypes.number,
         paddingRight: PropTypes.number,
@@ -55,8 +57,20 @@ export default class ImageButton extends Component {
     }
 
     _onPress = () => {
-        if (this.props.onPress !== undefined) {
+        if (this.props.onPress) {
             this.props.onPress();
+        }
+    };
+
+    _onPressIn = () => {
+        if (this.props.onPressIn) {
+            this.props.onPressIn();
+        }
+    };
+
+    _onPressOut = () => {
+        if (this.props.onPressOut) {
+            this.props.onPressOut();
         }
     };
 
@@ -96,6 +110,9 @@ export default class ImageButton extends Component {
                 style={[{width: this.props.width, height: this.props.height}, this.props.style, styles.container]}
                 activeOpacity={this.props.activeOpacity}
                 onPress={this._onPress}
+                onPressIn={this._onPressIn}
+                onPressOut={this._onPressOut}
+
             >
                 {this.renderContent()}
             </TouchableOpacity>

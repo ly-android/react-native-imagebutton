@@ -18,6 +18,8 @@ import {Imagebutton} from 'react-native-image-button-text';
 -   fontSize: PropTypes.number,
 -   textColor: PropTypes.string,
 -   onPress: PropTypes.func,
+-   onPressIn: PropTypes.func,
+-   onPressOut: PropTypes.func,
 -   paddingTop: PropTypes.number, //text marging top
 -   paddingLeft: PropTypes.number, //text marging left
 -   paddingRight: PropTypes.number, //text marging right
