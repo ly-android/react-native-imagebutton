@@ -7,7 +7,7 @@
 
 ## Usage
 ```javascript
-import {Imagebutton} from 'react-native-image-button-text';
+import {ImageButton} from 'react-native-image-button-text';
 ```
 #### props
 -   width: PropTypes.number.isRequired, //the component size
